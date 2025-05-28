@@ -23,12 +23,14 @@ body {
 
 main {
     display: flexbox;
+    min-width: 600px;
+    max-width: 800px;
     background-color: white;
     margin: 0px 100px 20px 100px;
     padding-top: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     border-radius: 0px 0px 10px 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.41);
 }
@@ -109,11 +111,25 @@ p::first-letter {
     margin-left: 20px;
 }
 
-article > aside {
+div.video {
     background-color: #1A5C38;
+    position: relative;
+    height: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 15px;
+    padding-bottom: 400px;
 }
 
-div {
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
     margin-top: 10px;
     background-color: #C5EBD6;
     border-radius: 10px;
@@ -121,7 +137,7 @@ div {
     box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.188);
 }
 
-div > p {
+aside > p {
     font-weight: normal;
 }
 
@@ -146,7 +162,8 @@ footer > p {
 article > picture {
     display: flex;
     justify-content: center;
-
+    min-width: 600px;
+    max-width: 800px;
 }
 
 p > a {
@@ -166,4 +183,5 @@ span {
 nav > a:hover {
     background-color: #2FA866; 
     padding: 0 2px 0 2px;
+    border: 2px;
 }
