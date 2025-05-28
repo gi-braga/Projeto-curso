@@ -15,6 +15,11 @@ body {
 
 main {
     background-color: white;
+    margin: 0px 100px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.41);
 }
 
 nav {
