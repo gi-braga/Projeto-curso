@@ -38,6 +38,9 @@ body {
     font-family: var(--font0);
 }
 
+a.externo:after {
+    content: '\1F517'
+}
 
 header {
     background-image: linear-gradient(180deg, #3ddc84, #1a5c37);
@@ -110,6 +113,11 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.41);
 }
 
+a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
 section > h1 {
     color: var(--cor5);
     font-family: 'idroid.otf', Arial, Helvetica, sans-serif;
@@ -122,10 +130,11 @@ article {
 
 article > h2 {
     color: var(--cor5);
-    background-image: linear-gradient(90deg,#c5ebd6, #FFFFFF);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
     font-family: var(--font2);
-    padding-left: 20px;
-
+    text-indent: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 article > img {
@@ -133,7 +142,7 @@ article > img {
 }
 
 article > img.pequena {
-    width: 50%;
+    max-width: 250px;
     display: block;
     margin: auto;
 }
@@ -142,14 +151,12 @@ p {
     font-family: var(--font0);
     text-align: justify;   
     text-size-adjust: 100%;    
-    font-size: 15px;
+    font-size: 1em;
     line-height: 26px;
     padding: 15px 0px;
+    text-indent: 20px;
 }
 
-p::first-letter {
-    margin-left: 20px;
-}
 
 div.video {
     background-color: var(--cor5);
@@ -182,11 +189,19 @@ aside > p {
     font-weight: normal;
 }
 
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2
+}
+
 
 h4 {
     color: white;
     padding: 15px;
-    background-color: #2FA866;
+    margin: 0px -15px 0 -15px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: var(--cor4);
 }
 
 footer {
@@ -205,11 +220,11 @@ footer > p {
 
 p > a {
     text-decoration: none;
-    color: #1D683F;
+    color: var(--cor5);
 }
 
 p > strong {
-    color: #1D683F
+    color: var(--cor5)
 }
 
 span {
