@@ -32,7 +32,7 @@
 
 
         div#q2 {
-            background-image: url(imagens/pattern003.png);            );
+            background-image: url(imagens/pattern003.png);
             background-position: center center;            
         }
 
@@ -41,9 +41,39 @@
             background-position: right top;
         }
 
+        #container {
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: aliceblue;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+        }
+
+        #conteudo {
+            position: absolute;
+            height: 200px;
+            width: 400px;
+
+            background-color: blue;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
     </style>
 </head>
 <body>
+
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
     <div class="quadrado" id="q1">
 
     </div>
