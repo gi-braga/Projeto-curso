@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de background</title>
+    <rel favicon href="imagens/favicon.ico" type="image/x-icon"></rel>
+    <style>
+        body {
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center center;
+            height: 98vh;
+            background-size: cover;
+        }
+
+        div.quadrado {
+            display: inline-block;
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            background-color: lightgray;
+            margin-top: 200px;
+            margin-left: 40px;
+        }
+
+        div#q1 {
+            background-image: url(imagens/pattern003.png);
+            background-repeat: repeat-x;
+            background-position: center;
+        }
+
+
+        div#q2 {
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center center;            
+        }
+
+        div#q3 {
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: right top;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+        
+    </div>
+    <div class="quadrado" id="q3">
+        
+    </div>
+    
+</body>
+</html>
